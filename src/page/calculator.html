@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="../public/ico/favicon.ico"
+            type="image/x-icon"
+        />
+        <link rel="stylesheet" href="../style/css/app/main.css" />
+        <title>Calculator</title>
+    </head>
+    <body>
+        <div class="container">
+            <nav class="menu">
+                <img src="../public/ico/menu.svg" class="menu-icon" />
+                <a href="../page/aboutme.html">
+                    <img src="../public/ico/about.svg" />
+                    About me
+                </a>
+                <a href="../page/calculator.html">
+                    Calculator
+                    <img src="../public/ico/calculator.svg" />
+                </a>
+            </nav>
+            <div class="calculator">
+                <img src="../public/img/phone-border.png" alt="phone border" />
+                <div class="calculator-grid">
+                    <div class="display">
+                        <div data-previous-operand class="previous-operand">
+                            000
+                        </div>
+                        <div data-current-operand class="current-operand">
+                            000
+                        </div>
+                    </div>
+                    <div class="operands">
+                        <button type="button" data-all-clear>AC</button>
+                        <button type="button" data-clear>C</button>
+                        <button type="button" data-operation>%</button>
+                        <button type="button" data-operation>÷</button>
+                        <button type="button" data-number>7</button>
+                        <button type="button" data-number>8</button>
+                        <button type="button" data-number>9</button>
+                        <button type="button" data-operation>×</button>
+                        <button type="button" data-number>4</button>
+                        <button type="button" data-number>5</button>
+                        <button type="button" data-number>6</button>
+                        <button type="button" data-operation>-</button>
+                        <button type="button" data-number>1</button>
+                        <button type="button" data-number>2</button>
+                        <button type="button" data-number>3</button>
+                        <button type="button" data-operation>+</button>
+                        <button type="button" data-number>0</button>
+                        <button type="button" data-number>.</button>
+                        <button type="button" data-equals>=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../script/js/app/main.js"></script>
+    </body>
+</html>
