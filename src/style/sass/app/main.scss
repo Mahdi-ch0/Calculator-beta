@@ -1,0 +1,24 @@
+@import "../screen/screen";
+@import "../screen/media-queries";
+@import "../screen/effects";
+@import "buttons";
+@import "effects";
+@import "output";
+@import 'cart';
+@import '../screen/nav';
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url(../../../public/font/OpenSans-Regular.woff) format('woff');
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    font-family: 'OpenSans', Arial, sans-serif; 
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}

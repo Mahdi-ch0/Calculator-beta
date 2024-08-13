@@ -1,0 +1,17 @@
+@import 'buttons';
+
+.display {
+    // background-color: red;
+    padding-right: 1rem;
+    text-align: end;
+    color: $primaryColor;
+    margin-top: 6rem;
+
+    .previous-operand {
+        font-size: 1.5rem;
+    }
+
+    .current-operand {
+        font-size: 5rem;
+    }
+}

@@ -13,20 +13,25 @@
     </head>
     <body>
         <div class="container">
+            <img src="../public/ico/menu-icon.svg" class="menu-icon" />
             <nav class="menu">
-                <img src="../public/ico/menu.svg" class="menu-icon" />
-                <a href="../page/aboutme.html">
-                    <img src="../public/ico/about.svg" />
-                    About me
-                </a>
-                <a href="../page/calculator.html">
-                    Calculator
-                    <img src="../public/ico/calculator.svg" />
-                </a>
+                <img src="../public/ico/close-icon.svg" class="close-icon" />
+                <div class="items">
+                    <a href="../page/aboutme.html">
+                        <img src="../public/ico/about.svg" />
+                        About me
+                    </a>
+                    <a href="../page/calculator.html">
+                        <img src="../public/ico/calculator.png" />
+                        Calculator
+                    </a>
+                </div>
             </nav>
             <div class="calculator">
                 <img src="../public/img/phone-border.png" alt="phone border" />
                 <div class="calculator-grid">
+                    <p clock>19:20</p>
+                    <img class="status-bar" src="../public/img/status-bar-1.png">
                     <div class="display">
                         <div data-previous-operand class="previous-operand">
                             000
@@ -52,7 +57,7 @@
                         <button type="button" data-number>2</button>
                         <button type="button" data-number>3</button>
                         <button type="button" data-operation>+</button>
-                        <button type="button" data-number>0</button>
+                        <button type="button" data-number span-2>0</button>
                         <button type="button" data-number>.</button>
                         <button type="button" data-equals>=</button>
                     </div>

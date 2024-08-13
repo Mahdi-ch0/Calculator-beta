@@ -1,0 +1,54 @@
+.calculator {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    img {
+        height: 50rem;
+        position: relative;
+    }
+
+    .calculator-grid {
+        position: absolute;
+
+        [clock] {
+            color: white;
+            position: absolute;
+            top: -4.1rem;
+            font-size: 0.7rem;
+        }
+
+        .status-bar {
+            height: 1.3rem;
+            position: absolute;
+            right: -0.5rem;
+            top: -3.5rem;
+        }
+
+        &::after {
+            content: '';
+            background-color: rgb(255, 255, 255);
+            height: 0.4rem;
+            width: 8rem;
+            position: absolute;
+            border-radius: 10rem;
+            left: 5rem;
+            bottom: -3rem;
+        }
+    }
+}
+
+
+.cart {
+    height: 100vb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .name {
+        color: red;
+        font-weight: bold;
+    }
+}

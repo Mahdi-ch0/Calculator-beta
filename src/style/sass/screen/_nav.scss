@@ -1,0 +1,53 @@
+.menu-icon {
+    height: 2.5rem;
+    cursor: pointer;
+    position: absolute;
+
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #f9ad42;
+    width: 15rem;
+    height: 100vh;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    position: fixed;
+    left: -29rem;
+    overflow: hidden;
+    z-index: 2;
+    display: none;
+    transition: transform 0.5s;
+
+    transform: translateX(29rem);
+
+    .close-icon {
+        height: 1.8rem;
+        cursor: pointer;
+        position: absolute;
+        right: 1rem;
+        top: 0.5rem;
+    }
+
+    .items {
+        margin-top: 2rem;
+        margin-left: 1rem;
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 0.5rem;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin-top: 0.8rem;
+
+            img {
+                height: 2rem;
+            }
+        }
+    }
+}
