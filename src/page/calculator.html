@@ -30,15 +30,14 @@
             <div class="calculator">
                 <img src="../public/img/phone-border.png" alt="phone border" />
                 <div class="calculator-grid">
-                    <p clock>19:20</p>
-                    <img class="status-bar" src="../public/img/status-bar-1.png">
+                    <p time>19:20</p>
+                    <img
+                        class="status-bar"
+                        src="../public/img/status-bar-1.png"
+                    />
                     <div class="display">
-                        <div data-previous-operand class="previous-operand">
-                            000
-                        </div>
-                        <div data-current-operand class="current-operand">
-                            000
-                        </div>
+                        <div data-previous-operand class="previous-operand"> 0</div>
+                        <div data-current-operand class="current-operand">8</div>
                     </div>
                     <div class="operands">
                         <button type="button" data-all-clear>AC</button>
@@ -64,6 +63,7 @@
                 </div>
             </div>
         </div>
-        <script src="../script/js/app/main.js"></script>
+        <script type="module" src="../script/js/app/main.js"></script>
+        <script type="module" src="../script/js/screen/initial-screen.js"></script>
     </body>
 </html>

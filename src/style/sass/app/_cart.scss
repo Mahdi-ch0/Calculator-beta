@@ -9,15 +9,16 @@
     img {
         height: 50rem;
         position: relative;
+        overflow: hidden;
     }
 
     .calculator-grid {
         position: absolute;
 
-        [clock] {
+        [time] {
             color: white;
             position: absolute;
-            top: -4.1rem;
+            top: -3.0rem;
             font-size: 0.7rem;
         }
 
@@ -25,7 +26,7 @@
             height: 1.3rem;
             position: absolute;
             right: -0.5rem;
-            top: -3.5rem;
+            top: -3.0rem;
         }
 
         &::after {
@@ -36,7 +37,7 @@
             position: absolute;
             border-radius: 10rem;
             left: 5rem;
-            bottom: -3rem;
+            bottom: -2.5rem;
         }
     }
 }

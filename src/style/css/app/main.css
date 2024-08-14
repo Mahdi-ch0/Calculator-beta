@@ -72,13 +72,19 @@
   padding-right: 1rem;
   text-align: end;
   color: #ffffff;
-  margin-top: 6rem;
+  margin-top: 4rem;
+  overflow: hidden;
 }
 .display .previous-operand {
   font-size: 1.5rem;
 }
 .display .current-operand {
-  font-size: 5rem;
+  font-size: 4rem;
+  height: 10rem;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  padding-bottom: 1rem;
 }
 
 .calculator {
@@ -91,21 +97,22 @@
 .calculator img {
   height: 50rem;
   position: relative;
+  overflow: hidden;
 }
 .calculator .calculator-grid {
   position: absolute;
 }
-.calculator .calculator-grid [clock] {
+.calculator .calculator-grid [time] {
   color: white;
   position: absolute;
-  top: -4.1rem;
+  top: -3rem;
   font-size: 0.7rem;
 }
 .calculator .calculator-grid .status-bar {
   height: 1.3rem;
   position: absolute;
   right: -0.5rem;
-  top: -3.5rem;
+  top: -3rem;
 }
 .calculator .calculator-grid::after {
   content: "";
@@ -115,7 +122,7 @@
   position: absolute;
   border-radius: 10rem;
   left: 5rem;
-  bottom: -3rem;
+  bottom: -2.5rem;
 }
 
 .cart {

@@ -1,17 +1,25 @@
-@import 'buttons';
+@import "buttons";
 
 .display {
     // background-color: red;
     padding-right: 1rem;
     text-align: end;
     color: $primaryColor;
-    margin-top: 6rem;
+    margin-top: 4rem;
+    overflow: hidden;
 
     .previous-operand {
         font-size: 1.5rem;
+        // background-color: blue;
     }
 
     .current-operand {
-        font-size: 5rem;
+        font-size: 4rem;
+        // background-color: red;
+        height: 10rem;
+        display: flex;
+        justify-content: end;
+        align-items: flex-end;
+        padding-bottom: 1rem;
     }
 }
