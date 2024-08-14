@@ -72,19 +72,21 @@
   padding-right: 1rem;
   text-align: end;
   color: #ffffff;
-  margin-top: 4rem;
+  margin-top: 7rem;
   overflow: hidden;
 }
 .display .previous-operand {
   font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
 .display .current-operand {
   font-size: 4rem;
-  height: 10rem;
+  height: 5rem;
   display: flex;
   justify-content: end;
   align-items: flex-end;
-  padding-bottom: 1rem;
+  padding-bottom: 0.8rem;
+  overflow: hidden;
 }
 
 .calculator {
@@ -105,8 +107,8 @@
 .calculator .calculator-grid [time] {
   color: white;
   position: absolute;
-  top: -3rem;
-  font-size: 0.7rem;
+  top: -3.3rem;
+  font-size: 0.6rem;
 }
 .calculator .calculator-grid .status-bar {
   height: 1.3rem;

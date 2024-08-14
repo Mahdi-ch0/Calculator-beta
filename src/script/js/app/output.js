@@ -1,7 +1,7 @@
-import { computationNumber } from "./computatino";
+import { computationNumber } from "./computation.js";
+const result = new computationNumber();
 export class Calculator {
     constructor(previous, current) {
-        this.operationElement = null;
         this.previousOperandTextElement = previous;
         this.currentOperandTextElement = current;
         this.allClear();
@@ -32,21 +32,6 @@ export class Calculator {
             if (this.currentOperandTextElement.innerHTML.length <= 6) {
                 this.currentOperandTextElement.innerHTML += number;
             }
-        }
-    }
-    appendOperation(operation) {
-        if (this.previousOperandTextElement.innerHTML !== "0") {
-            this.operationElement += operation;
-            this.previousOperandTextElement.innerHTML =
-                this.currentOperandTextElement.innerHTML;
-            this.currentOperandTextElement.innerHTML = "0";
-        }
-    }
-    appendEquals() {
-        if (this.previousOperandTextElement.innerHTML !== ' ') {
-            const resultNumber = computationNumber();
-            this.currentOperandTextElement.innerHTML = String(resultNumber);
-            this.previousOperandTextElement.innerHTML = ' ';
         }
     }
 }

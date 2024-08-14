@@ -1,3 +1,4 @@
+import { Navigation } from "../app/navigation.js";
 export class Inital {
     constructor() {
         this.statusBarTime = document.querySelector("[time]");
@@ -9,5 +10,8 @@ export class Inital {
         this.statusBarTime.innerHTML = `${hours}:${minutes}`;
     }
 }
-const initial = new Inital();
-const time = initial.time();
+export const initial = new Inital();
+const navigation = new Navigation();
+window.addEventListener('load', () => {
+    navigation.closeNavigation();
+});

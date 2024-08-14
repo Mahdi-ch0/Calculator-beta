@@ -1,3 +1,5 @@
+import { Navigation } from "../app/navigation.js";
+
 export class Inital {
     statusBarTime = document.querySelector("[time]") as HTMLParagraphElement;
     time(): void {
@@ -8,6 +10,9 @@ export class Inital {
     }
 }
 
-const initial = new Inital();
-const time = initial.time();
+export const initial = new Inital();
+const navigation = new Navigation();
 
+window.addEventListener('load', () => {
+    navigation.closeNavigation();
+})

@@ -1,10 +1,10 @@
-import { computationNumber } from "./computatino";
+import { computationNumber } from "./computation.js";
 
+const result = new computationNumber();
 
 export class Calculator {
     previousOperandTextElement: HTMLDivElement;
     currentOperandTextElement: HTMLDivElement;
-    operationElement: null | string = null;
     constructor(previous: HTMLDivElement, current: HTMLDivElement) {
         this.previousOperandTextElement = previous;
         this.currentOperandTextElement = current;
@@ -42,20 +42,4 @@ export class Calculator {
         }
     }
 
-    appendOperation(operation: string): void {
-        if (this.previousOperandTextElement.innerHTML !== "0") {
-            this.operationElement += operation;
-            this.previousOperandTextElement.innerHTML =
-                this.currentOperandTextElement.innerHTML;
-            this.currentOperandTextElement.innerHTML = "0";
-        }
-    }
-
-    appendEquals(): void {
-        if(this.previousOperandTextElement.innerHTML !== ' ') {
-            const resultNumber = computationNumber();
-            this.currentOperandTextElement.innerHTML = String(resultNumber);
-            this.previousOperandTextElement.innerHTML = ' ';
-        }
-    }
 }
